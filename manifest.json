@@ -1,6 +1,6 @@
 {
-    "domain": "livemaps",
-    "name": "livemaps",
+    "domain": "LiveMaps",
+    "name": "LiveMaps",
     "codeowners": [],
     "dependencies": [],
     "documentation": "https://github.com/mchrdk/HALivemaps",

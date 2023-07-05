@@ -3,7 +3,7 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant import config_entries
 
 
-DOMAIN = 'livemaps'
+DOMAIN = 'LiveMaps'
 
 
 async def async_setup(hass, config):
