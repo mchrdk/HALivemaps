@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to LiveMaps",
+        "description": "Please enter your username, password, link to LiveMaps, and choose a connection type",
+        "data": {
+          "username": "Username for LiveMaps",
+          "password": "Password for LiveMaps",
+          "url": "URL for LiveMaps",
+          "connection_type": "Connection Type(file for local data.json debug file)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid authentication, check your username and password",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  }
+}
