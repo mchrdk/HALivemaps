@@ -103,13 +103,13 @@ class LiveMapsSensor(Entity):
 
         if data:
             _LOGGER.debug(json.dumps(data, indent=4))
-            #for alert in data:
-            #    if alert["Priority"] == "P1":
-            #        self._state = "critical"
-            #    elif alert["Priority"] == "P2" and self._state != "critical":
-            #        self._state = "warning"
+            for alert in data:
+               if alert["Priority"] == "P1":
+                   self._state = "critical"
+               elif alert["Priority"] == "P2" and self._state != "critical":
+                   self._state = "warning"
 
-            #    self._alerts.append(alert)
+               self._alerts.append(alert)
         else:
             _LOGGER.debug(f'No data found from {connection_type}')
             self._state = "ok"
